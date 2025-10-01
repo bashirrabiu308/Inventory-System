@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c4c8f5f-d9a8-437d-920f-f384f36d098b" name="Changes" comment="" />
+    <list default="true" id="4c4c8f5f-d9a8-437d-920f-f384f36d098b" name="Changes" comment="New feature added">
+      <change beforePath="$PROJECT_DIR$/data_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_base.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +54,34 @@
       <option name="presentableId" value="Default" />
       <updated>1759350768134</updated>
     </task>
+    <task id="LOCAL-00001" summary="New feature added">
+      <option name="closed" value="true" />
+      <created>1759356242925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759356242925</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New feature added">
+      <option name="closed" value="true" />
+      <created>1759356368764</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759356368764</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -64,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New feature added" />
+    <option name="LAST_COMMIT_MESSAGE" value="New feature added" />
   </component>
 </project>

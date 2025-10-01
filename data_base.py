@@ -35,3 +35,43 @@ def create_tables():
 
     conn.commit()
     conn.close()
+
+def add_product(product_id, name, quantity, price):
+    """Add a new product."""
+    conn = connect_db()
+    cursor = conn.cursor()
+    try:
+        cursor.execute("INSERT INTO products VALUES (?, ?, ?, ?)",
+                       (product_id, name, quantity, price))
+        conn.commit()
+    except sqlite3.IntegrityError as e:
+        print("Error:", e)  # Handle duplicate IDs/names
+    conn.close()
+
+def get_products():
+    """Fetch all products."""
+    conn = connect_db()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM products")
+    rows = cursor.fetchall()
+    conn.close()
+    return rows
+
+def update_product(product_id, quantity=None, price=None):
+    """Update product quantity or price."""
+    conn = connect_db()
+    cursor = conn.cursor()
+    if quantity is not None:
+        cursor.execute("UPDATE products SET quantity=? WHERE id=?", (quantity, product_id))
+    if price is not None:
+        cursor.execute("UPDATE products SET price=? WHERE id=?", (price, product_id))
+    conn.commit()
+    conn.close()
+
+def delete_product(product_id):
+    """Delete a product by ID."""
+    conn = connect_db()
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM products WHERE id=?", (product_id,))
+    conn.commit()
+    conn.close()
