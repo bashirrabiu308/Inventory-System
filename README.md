@@ -99,9 +99,3 @@ inventory-management/
 * **Transaction Handling**: Member 2
 * **Reporting**: Member 3
 * **GUI Development**: Member 4
-
----
-
-✅ This README is **ready for GitHub** — with headings, emojis, code blocks, and structure.
-
-Do you want me to also make you a **preview screenshot** (like showing how your SQLite schema works) so your README looks even more professional on GitHub?
